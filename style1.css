@@ -1,0 +1,37 @@
+@charset "UTF-8";
+.scrolling-wrapper {
+      display: flex;
+      width:100vw;
+      white-space: nowrap;
+      /* Space between cards */
+      padding: 20px 0;
+    }
+
+    .card {
+      margin-right: 20px;
+      width: 18rem;
+      flex: 0 0 auto;
+    }
+
+    /* Animation to move cards left to right */
+    @keyframes moveCards {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100050%);
+      }
+    }
+
+    /* Applying the animation */
+    .scrolling-wrapper {
+      animation: moveCards 17500s linear infinite;
+    }
+
+    /* Optional: duplicate the set of cards for smoother looping effect */
+    .scrolling-wrapper > * {
+      animation-play-state: paused;
+    }
+    .scrolling-wrapper:hover > * {
+      animation-play-state: running;
+    }

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.poster-image {
+	height: 40vw !important;
+}
+
+.play-card {
+	margin-left:8vw;
+	width: 70vw;
+}
+.song-card{
+	width: 55rem;
+    margin-left: 98px;
+}
+
